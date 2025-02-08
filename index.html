@@ -553,12 +553,23 @@
     <!-- End Contact Section -->
 
     <!-- Start Footer Section  -->
-    <footer></footer>
+    <footer class="bg-dark py-2">
+      <div class="container-fluid">
+        <div class="col-12 text-center">
+          <p class="text-light">&copy; CopyRight <span id="autoyear"></span> Make By PTT Co.,Ltd.</p>
+        </div>
+      </div>
+    </footer>
     <!-- End Footer Section -->
 
     <!-- bootstrap css1 js1 -->
     <script src=" 	https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <!-- custom js  -->
+    <script type="text/javascript">
+      const autoyear = document.getElementById('autoyear');
+      const getyear = new Date().getUTCFullYear();
+      autoyear.textContent = getyear;
+    </script>
   </body>
 </html>
 
